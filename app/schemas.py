@@ -13,7 +13,7 @@ class PostCreate(PostBase):
     pass
     
     
-#class PostOut(PostBase):
+
 
 class UserOut(BaseModel):
     id: int
@@ -35,6 +35,12 @@ class Post(PostBase):
     created_at: datetime
     owner_id: int
     owner: UserOut
+    class Config:
+        orm_mode = True
+
+class PostOut(PostBase):
+    Post : Post
+    votes : int
     class Config:
         orm_mode = True
 
