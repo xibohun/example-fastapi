@@ -10,10 +10,10 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: '3.9'
-      - name: upgrade pip
+      - name: update pip
         run: python -m install pip --upgrade pip
       - name: install all dependencies
         run: pip install -r requirement.txt
-        
+
 
 
