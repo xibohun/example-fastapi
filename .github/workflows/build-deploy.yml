@@ -4,7 +4,7 @@ jobs:
   job1:
   env:
     DATABASE_HOSTNAME: 'localhost'
-    DATABASE_PORT : '5432'
+    DATABASE_PORT : 5432
     DATABASE_PASSWORD :'postgres'
     DATABASE_NAME : 'fastapi'
     DATABASE_USERNAME : 'postgres'
