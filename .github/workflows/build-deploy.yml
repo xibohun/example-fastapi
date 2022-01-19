@@ -15,10 +15,10 @@ jobs:
       - name: install all dependencies
         run: pip install -r requirement.txt
       - name: test with pytest
-        run:|
+        run: |
           pip install pytest
           pytest
-          
+
 
 
 
